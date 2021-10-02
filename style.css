@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;0,400;1,200;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --alata: "Alata", sans-serif;
+  --josefin: "Josefin Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Mobpile View */
+main {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Nav */
+
+nav {
+  height: 100%;
+  width: 100vw;
+  background-color: var(--Black);
+  padding: 40px 25px 0 25px;
+  position: fixed;
+  z-index: 1000;
+  transform: translateY(-10000px);
+  overscroll-behavior: contain;
+}
+
+nav.active {
+  display: block;
+  transition: all ease 1s;
+  transform: translateY(0px);
+}
+
+.navbar {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo_close-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 25px;
+}
+
+ul.navlinks {
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  margin-top: 8rem;
+}
+
+li.navlink {
+  color: var(--White);
+  list-style: none;
+  font-family: var(--josefin);
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+/* landing page */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  padding: 40px 25px 0 25px;
+  background-image: url(./images/mobile/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.hero-text h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--josefin);
+  font-weight: 20;
+  font-size: 2rem;
+  border: solid 1.5px white;
+  width: 20rem;
+  padding: 20px;
+}
+
+/* interactive */
+.interactive {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.interactive-img-holder {
+  width: 20rem;
+  height: 13rem;
+}
+
+.interactive-img {
+  background-image: url(./images/mobile/image-interactive.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.interactive-text {
+  height: 100%;
+  width: 19rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  background-color: var(--White);
+  margin-bottom: 6rem;
+}
+
+.headers {
+  font-family: var(--josefin);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--Black);
+  padding: 20px 0;
+}
+
+.interactive-text p {
+  font-family: var(--alata);
+  color: var(--Very-Dark-Gray);
+  width: 19rem;
+  margin: auto;
+}
+
+/* creations */
+.creations {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.creations-heading h1 {
+  margin-bottom: 1.5rem;
+}
+
+.our-creations {
+  margin-bottom: 20px;
+}
+
+.creation {
+  background-color: green;
+  width: 20rem;
+  height: 7rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.overlay {
+  background-color: var(--Black);
+  height: 7rem;
+  width: 20rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.creation h1 {
+  text-transform: uppercase;
+  font-family: var(--josefin);
+  font-weight: 300;
+  color: var(--White);
+  padding: 50px 0 0 20px;
+}
+.creation .earth {
+  background-image: url(./images/mobile/image-deep-earth.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creation .arcade {
+  background-image: url(./images/mobile/image-night-arcade.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creation .soccer {
+  background-image: url(./images/mobile/image-soccer-team.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creation .grid {
+  background-image: url(./images/mobile/image-grid.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creation .above {
+  background-image: url(./images/mobile/image-from-above.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creation .pocket {
+  background-image: url(./images/mobile/image-pocket-borealis.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creation .curiosity {
+  background-image: url(./images/mobile/image-curiosity.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creation .fisheye {
+  background-image: url(./images/mobile/image-fisheye.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.see-all button {
+  width: 12rem;
+  height: 3rem;
+  text-transform: uppercase;
+  font-family: var(--alata);
+  background-color: var(--White);
+  outline: none;
+  border: 2px solid black;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+footer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.footer-container {
+  height: 100%;
+  /* background-color: red; */
+}
+
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+  margin: auto;
+}
+
+.footer-logo img {
+  height: 2rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.footer-link {
+  color: var(--White);
+  font-family: var(--alata);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-social-media {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-media img {
+  margin-right: 15px;
+  height: 30px;
+}
+
+.footnnote {
+  margin-top: 20px;
+  color: var(--Dark-Gray);
+  font-family: var(--alata);
+}
